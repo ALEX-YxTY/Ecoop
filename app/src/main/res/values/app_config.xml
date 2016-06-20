@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+
+    <string name="apk_name">ecoop.apk</string>
+    <string name="db_version">1</string>
+    <string name="svr_version">1.0.0</string>
+    <string name="release_date">1450336510762</string>
+    <!-- majar version change shall force app update -->
+    <string name="major_version">1</string>
+       
+  <!--  -->
+    <string name="web_server_url">http://ecoop.szdod.com</string>
+  <!--   -->
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/more_title_h"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/bt_return"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/btn_back"
+            android:onClick="click"
+            android:text="返回"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/title_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/callme"
+            android:textColor="@color/green_title"
+            android:textSize="@dimen/more_title_txt_sz" />
+        <Button
+            android:id="@+id/fb"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="反馈"
+            android:textColor="@color/green_title"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@color/white"
+            android:drawablePadding="0dp"
+            android:visibility="gone"
+             />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_telephone"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            />
+
+        <TextView
+            android:id="@+id/myphone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:text="0512-55253827"
+            android:textColor="@color/tv_black"
+            android:textSize="16sp" />
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/next" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rl_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_mailbox"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:text="d2d_home@szdod.com"
+            android:textColor="@color/tv_black"
+            android:textSize="16sp" />
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/next" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rl_myweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_website"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            />
+
+        <TextView
+            android:id="@+id/myweb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:text="访问合作社官网"
+            android:textColor="@color/tv_black"
+            android:textSize="16sp" />
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/next" />
+    </LinearLayout>
+</LinearLayout>

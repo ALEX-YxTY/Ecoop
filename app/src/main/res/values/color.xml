@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nomal_title">#c0c0c0</color>
+    <color name="normal_line">#d3d3d3</color>
+    <color name="normal_bg">#efefef</color>
+    <color name="white">#ffffff</color>
+    <color name="green_title">#7fbb22</color>
+    <color name="green_btn">#bfdd90</color>
+
+    <color name="green_btn2">#7fb921</color>
+    <color name="bg_green">#7fb921</color>
+    <color name="btn_bg_green">#7fb921</color>
+
+    <color name="tv_cafe">#5d4e47</color>
+    <color name="tv_black">#363633</color>
+    <color name="bar_bg">#f4f6e6</color>
+    <color name="tv_green">#55b948</color>
+
+    <color name="tv_black2">#494949</color>
+    <color name="tv_orange">#ff8f00</color>
+    <color name="tv_red">#e33525</color>
+    <color name="tv_gray">#a7a7a7</color>
+    <color name="tv_goods_title">#484848</color>
+    <color name="tv_goods_content">#7a7a7a</color>
+    <color name="tv_team_price">#fe7001</color>
+    <color name="tv_market_price">#bdbdbd</color>
+
+    <color name="btn_bg_orange">#ff6f01</color>
+    <color name="btn_tv_gray">#767676</color>
+    <color name="tv_blue">#469af7</color>
+    <color name="order_bg">#efefef</color>
+    <color name="bg_app">#ededed</color>
+    <color name="light_light_gray">#eeeeee</color>
+    <color name="light_orange">#ff7300</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#009933</color>
+    <color name="green_line">#a3c569</color>
+    <color name="bg_buy_success">#f0fff1</color>
+    <color name="bg_buy_failure">#ffe7e6</color>
+    <color name="bg_buy_failure_line">#f88971</color>
+
+
+    <color name="light_gray">#f0f0f0</color>
+    <color name="dark_gray">#9E9E9E</color>
+    <color name="text_color_primary_light">#ffffffff</color>
+    <color name="text_color_secondary_light">#b3ffffff</color>
+    <color name="text_color_hint_light">#4dffffff</color>
+    <color name="dividers_color_light">#1fffffff</color>
+    <color name="text_color_primary_dark">#de000000</color>
+    <color name="text_color_secondary_dark">#8a000000</color>
+    <color name="text_color_hint_dark">#42000000</color>
+    <color name="dividers_color_dark">#1f000000</color>
+    <color name="gray">#e9e9e9</color>
+
+
+</resources>

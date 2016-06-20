@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/more_title_h"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/bt_return"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/btn_back"
+            android:onClick="click"
+            android:text="返回"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/bind"
+            android:textColor="@color/green_title"
+            android:textSize="@dimen/more_title_txt_sz" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/number" />
+
+        <EditText
+            android:id="@+id/et_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/phone"
+            android:background="@color/white"
+            android:hint="@string/in_phonenumber"
+            android:inputType="number"
+            android:textColor="@color/text_color_secondary_dark"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_send_verify"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/margin_266"
+            android:layout_height="@dimen/margin_78"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_28"
+            android:background="@drawable/btn_green_stroke2"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_20"
+            android:textColor="@color/btn_bg_green"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="@dimen/margin_102"
+        android:layout_height="1dip"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/password" />
+
+        <EditText
+            android:id="@+id/et_identifyingcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/iv_password"
+            android:background="@color/white"
+            android:hint="@string/in_identifyingcode"
+            android:inputType="number"
+            android:textColor="@color/text_color_secondary_dark"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_binding"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/margin_429"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_130"
+        android:background="@drawable/btn_green"
+        android:paddingBottom="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_20"
+        android:text="@string/binding"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>

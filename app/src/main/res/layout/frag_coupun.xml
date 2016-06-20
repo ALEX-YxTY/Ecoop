@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividers_color_light" />
+
+    <RadioGroup
+        android:id="@+id/rg_coupun"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_wait_use"
+            style="@style/my_tab2"
+            android:checked="true"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio_underline_selector"
+            android:text="@string/wait_use" />
+
+        <RadioButton
+            android:id="@+id/rb_unactivited"
+            style="@style/my_tab2"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio_underline_selector"
+            android:text="@string/unactivited" />
+
+        <RadioButton
+            android:id="@+id/rb_overdue"
+            style="@style/my_tab2"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio_underline_selector"
+            android:text="@string/overdue" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv_coupun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/normal_bg"
+        android:divider="@null"/>
+
+</LinearLayout>

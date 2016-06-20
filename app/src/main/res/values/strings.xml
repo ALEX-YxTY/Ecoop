@@ -1,0 +1,122 @@
+﻿<resources>
+
+    <string name="app_name">e合作社</string>
+    <string name="defult_address">设为默认地址</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="choose_signin_way">请选择登录方式</string>
+    <string name="login">登录</string>
+    <string name="bind">绑定手机号</string>
+    <string name="binding">确认</string>
+    <string name="vote">活动</string>
+    <string name="in_phonenumber">请输入手机号</string>
+    <string name="get_identifyingcode">获取验证码</string>
+    <string name="in_identifyingcode">输入验证码</string>
+    <string name="city">南京市</string>
+    <string name="home">首页</string>
+    <string name="group_purchase">我的社</string>
+    <string name="order">我的订单</string>
+    <string name="mine">个人中心</string>
+    <string name="mine_title">我的</string>
+    <string name="pin_info">玩法介绍</string>
+    <string name="express">物流信息</string>
+    <string name="username">游客</string>
+    <string name="phonenumber">13851528062</string>
+    <string name="address">建康路钓鱼巷39号701室</string>
+    <string name="mypoint">我的积分</string>
+    <string name="myconpun">代金券</string>
+    <string name="account">账户余额</string>
+    <string name="buy_success">合作成功</string>
+    <string name="buy_success_info">我们会尽快向您发货，请耐心等待</string>
+    <string name="buy_failure">合作失败</string>
+    <string name="e_come_on">三缺一</string>
+    <string name="checkteam">查看团详情</string>
+    <string name="checkorder">查看订单详情</string>
+    <string name="coupun_price">50元</string>
+    <string name="coupun_name">新人专享</string>
+    <string name="coupun_condition">满80元使用</string>
+    <string name="validity">有效期:2015.3.15-2016.3.24可用</string>
+    <string name="sign_for">签收成功</string>
+    <string name="order_state">订单状态:</string>
+    <string name="order_no">订单编号:</string>
+    <string name="order_time">下单时间:</string>
+    <string name="distribution_way">配送方式:</string>
+    <string name="order_state_name">签收成功</string>
+    <string name="goods_title">商品名称</string>
+    <string name="goods_content">商品介绍</string>
+    <string name="team_price">10.80</string>
+    <string name="marker_price">28.90</string>
+    <string name="team_way">3人成团</string>
+    <string name="team_buy">拼团购买</string>
+    <string name="etogether">e起来</string>
+    <string name="addresstitle">地址</string>
+    <string name="agreement_confrim">我已阅读并同意</string>
+    <string name="milai_agreement">e合作社服务协议</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="alipay">支付宝支付</string>
+
+    <string-array name="setting_item_name">
+        <item>我的订单</item>
+        <item>我的社</item>
+        <item>活动</item>
+        <item>收货地址</item>
+        <item>联系我们</item>
+        <item>设置</item>
+    </string-array>
+
+    <string name="icon">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="consignee">收货人</string>
+    <string name="clientname">名字</string>
+    <string name="name">cookie</string>
+    <string name="addressdefault">[默认]</string>
+    <string name="phone">绑定手机</string>
+    <string name="version">版本号</string>
+    <string name="versioncode">2.3.1</string>
+    <string name="checkversion">版本检测</string>
+    <string name="log_off">退出登录</string>
+    <string name="creatteam">我也开个社，点此回商品页面</string>
+    <string name="pay_now">立即支付</string>
+    <string name="wait_use">待使用</string>
+    <string name="unactivited">已使用</string>
+    <string name="overdue">已过期</string>
+    <string name="allorder">全部订单</string>
+    <string name="nopay">待付款</string>
+    <string name="onway">待收货</string>
+    <string name="logistics">查看物流</string>
+    <string name="confirm_goods">确认收货</string>
+    <string name="confirm_team">查看团详情</string>
+    <string name="welcometeam">以下小伙伴正在发起合作，您可以直接参与</string>
+    <string name="teamname">团长Cookie</string>
+    <string name="teamdate">2015-12-23 16:38:22开团</string>
+    <string name="teamprice">¥10.8/件</string>
+    <string name="jointeam">还差2人成团，火速开团</string>
+    <string name="addaddress">新增地址</string>
+    <string name="save">保存</string>
+    <string name="current_city">当前定位</string>
+    <string name="location_city">开通城市</string>
+    <string name="contactphone">联系电话</string>
+    <string name="telormobile">手机或固话</string>
+    <string name="province">省份</string>
+    <string name="mycity">市</string>
+    <string name="zone">区/县</string>
+    <string name="detailedaddress">详细地址</string>
+    <string name="mydaddress">街道门牌信息</string>
+    <string name="zipcode">邮政编码</string>
+    <string name="gopay">去支付</string>
+    <string name="cancelorder">取消订单</string>
+    <string name="submitorders">下单成功</string>
+    <string name="distribution">配送中</string>
+    <string name="title_activity_pay_result">支付结果</string>
+    <string name="choose_city">选择城市</string>
+    <string name="notice">通知</string>
+    <string name="callme">联系我们</string>
+    <string name="myphone">客服电话</string>
+    <string name="email">我的邮箱</string>
+    <string name="myweb">官方网址</string>
+    <string name="order_time1">预期收货时间</string>
+</resources>

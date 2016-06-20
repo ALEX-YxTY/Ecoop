@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/more_title_h"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/bt_return"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/btn_back"
+            android:text="返回"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/title_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/green_title"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="0dp"
+            android:src="@drawable/btn_share" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/dividers_color_dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_buy_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_buy_success"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/buy_success_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/buy_success"
+                        android:textColor="@color/bg_green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/buy_success_info"
+                    android:textColor="@color/text_color_secondary_dark"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/btn_bg_green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Rl_buy_failure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_buy_failure"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/buy_failure_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/buy_failure"
+                        android:textColor="@color/bg_buy_failure_line"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_buy_failure_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buy_e_come"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_buy_success"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/buy_success_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/e_come_on"
+                        android:textColor="@color/bg_green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/btn_bg_green" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/rl_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_buy_success"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/normal_bg"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_order_good"
+                            android:layout_width="@dimen/margin_106"
+                            android:layout_height="@dimen/margin_106"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kiwi512" />
+
+                        <TextView
+                            android:id="@+id/tv_order_name"
+                            android:layout_width="@dimen/margin_429"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/iv_order_good"
+                            android:singleLine="true"
+                            android:text="新疆库尔勒香梨 西域香妃梨一箱"
+                            android:textColor="@color/tv_black"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_info_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_order_name"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_toRightOf="@id/iv_order_good"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_team"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="4dp"
+                                android:text="5人团："
+                                android:textColor="@color/tv_black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_team_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="¥18.90/件"
+                                android:textColor="@color/tv_orange"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_buy_success"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/iv_order_good"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/buy_success" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_buy_ecome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/normal_bg"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iv_order_good_ecome"
+                            android:layout_width="@dimen/margin_106"
+                            android:layout_height="@dimen/margin_106"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kiwi512" />
+
+                        <TextView
+                            android:id="@+id/tv_order_name_ecome"
+                            android:layout_width="@dimen/margin_429"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:maxLines="2"
+                            android:layout_toRightOf="@id/iv_order_good_ecome"
+                            android:text="新疆库尔勒香梨 西域香妃梨一箱"
+                            android:textColor="@color/tv_black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_info_detail_ecome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_order_name_ecome"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_toRightOf="@id/iv_order_good_ecome"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_team_ecome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="4dp"
+                                android:text="5人团："
+                                android:textColor="@color/tv_black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_team_price_ecome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="¥18.90/件"
+                                android:textColor="@color/tv_orange"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_buy_ecome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/iv_order_good_ecome"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/buy_e_come_on" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_buy_failure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/normal_bg"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_order_good_failure"
+                            android:layout_width="@dimen/margin_106"
+                            android:layout_height="@dimen/margin_106"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kiwi512" />
+
+                        <TextView
+                            android:id="@+id/tv_order_name_failure"
+                            android:layout_width="@dimen/margin_429"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/iv_order_good_failure"
+                            android:singleLine="true"
+                            android:text="新疆库尔勒香梨 西域香妃梨一箱"
+                            android:textColor="@color/tv_black"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_info_detail__failure"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_order_name_failure"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_toRightOf="@id/iv_order_good_failure"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_team_failure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="4dp"
+                                android:text="5人团："
+                                android:textColor="@color/tv_black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_team_price_failure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="¥18.90/件"
+                                android:textColor="@color/tv_orange"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_buy_failure"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/iv_order_good_failure"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/buy_failure" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_avatar_horizon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_buy"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <com.milai.ecoop.view.CircleImageView
+                        android:id="@+id/avatar1"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/ic_profile_none"
+                        app:border_color="@color/dividers_color_light"
+                        app:border_width="0dp" />
+
+
+                    <com.milai.ecoop.view.CircleImageView
+                        android:id="@+id/avatar2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/ic_profile_none"
+                        android:visibility="gone"
+                        app:border_color="@color/dividers_color_light"
+                        app:border_width="0dp" />
+
+
+                    <com.milai.ecoop.view.CircleImageView
+                        android:id="@+id/avatar3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/ic_profile_none"
+                        android:visibility="gone"
+                        app:border_color="@color/dividers_color_light"
+                        app:border_width="0dp" />
+
+                    <com.milai.ecoop.view.CircleImageView
+                        android:id="@+id/avatar4"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/ic_profile_none"
+                        android:visibility="gone"
+                        app:border_color="@color/dividers_color_light"
+                        app:border_width="0dp" />
+
+                    <com.milai.ecoop.view.CircleImageView
+                        android:id="@+id/avatar5"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/ic_profile_none"
+                        android:visibility="gone"
+                        app:border_color="@color/dividers_color_light"
+                        app:border_width="0dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/remaining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="3"
+                android:textColor="@color/tv_black"
+                android:textSize="14sp"
+                android:background="@color/white"
+                android:padding="8dp"
+                />
+            <LinearLayout
+                android:id="@+id/ll_counttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_remain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="3"
+                    android:textColor="@color/tv_black"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/tv_black2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:text="剩余"
+                        android:textColor="@color/tv_black2"
+                        android:textSize="16sp" />
+
+                    <com.milai.ecoop.view.CountDownView
+                        android:id="@+id/count_down_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundColor="@color/btn_bg_green"
+                        app:colonColor="@color/tv_black2"
+                        app:size="16sp"
+                        app:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="结束"
+                        android:textColor="@color/tv_black2"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/tv_black2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_avatar_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <include layout="@layout/item_play_introduction" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_creatteam"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_green"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/creatteam"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

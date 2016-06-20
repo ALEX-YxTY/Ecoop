@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/normal_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_group_good"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kiwi512" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goodname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="新疆库尔勒香梨"
+                android:textColor="@color/text_color_secondary_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_team_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="成团价 ￥19.90/件"
+                android:textColor="@color/bg_green"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_group_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="团购成功"
+            android:textColor="@color/tv_orange"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_checkteam"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/margin_200"
+            android:layout_height="@dimen/margin_70"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/bt_checkorder"
+            android:background="@drawable/btn_normal"
+            android:text="@string/checkteam"
+            android:textColor="@color/tv_cafe"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_checkorder"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/margin_200"
+            android:layout_height="@dimen/margin_70"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_normal"
+            android:text="@string/checkorder"
+            android:textColor="@color/tv_cafe"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_download_white"
+    >
+
+    <com.milai.ecoop.view.RefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ListView
+            android:id="@+id/lv_goodsinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="8dp" />
+    </com.milai.ecoop.view.RefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_no_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_network"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="断网了，超值的商品正在离你越来越远(╯﹏╰)"
+                android:layout_marginTop="@dimen/margin_64"
+                android:textColor="@color/tv_gray"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
