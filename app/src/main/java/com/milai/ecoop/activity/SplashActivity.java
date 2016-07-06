@@ -86,7 +86,9 @@ public class SplashActivity extends Activity implements View.OnClickListener {
             @Override
             public void onSuccess(String data) {
                 url = data;
-                Picasso.with(SplashActivity.this).load(url).into(iv_startpage);
+                Picasso.with(SplashActivity.this).load(url)
+                        .placeholder(getResources().getDrawable(R.drawable.start_page))
+                        .error(getResources().getDrawable(R.drawable.start_page)).into(iv_startpage);
 
                 /*SharedPreferences sp = getPreferences(MODE_APPEND);
                 if (!TextUtils.equals(data, sp.getString("startPage", ""))) {
@@ -198,7 +200,12 @@ public class SplashActivity extends Activity implements View.OnClickListener {
                                 }
                             }
                         }else {
-                            Toast.makeText(SplashActivity.this,"连接出错",Toast.LENGTH_SHORT).show();
+                            SplashActivity.this.runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Toast.makeText(SplashActivity.this,"连接出错",Toast.LENGTH_SHORT).show();
+                                }
+                            });
                         }
                         conn.disconnect();
 

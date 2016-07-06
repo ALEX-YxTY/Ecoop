@@ -338,6 +338,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         } else if (frag.equals("grouppurchase")) {
             if (currentPage != 3) {
                 currentPage = 3;
+                Bundle bundle=new Bundle();
+                Boolean flag=false;
+                bundle.putBoolean("flag", flag);
+                myGroupFrag.setArguments(bundle);
                 title_main.setText(R.string.group_purchase);
                 tv_choose_city.setVisibility(View.GONE);
                 bt_return.setVisibility(View.GONE);
@@ -349,6 +353,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         } else if (frag.equals("order")) {
             if (currentPage != 4) {
                 currentPage = 4;
+                Bundle bundle=new Bundle();
+                Boolean flag=false;
+                bundle.putBoolean("flag", flag);
+                orderFrag.setArguments(bundle);
                 title_main.setText(R.string.order);
                 tv_choose_city.setVisibility(View.GONE);
                 bt_return.setVisibility(View.GONE);

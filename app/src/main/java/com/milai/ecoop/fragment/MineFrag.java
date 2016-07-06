@@ -168,11 +168,7 @@ public class MineFrag extends Fragment implements View.OnClickListener, SwipeRef
 
                         swipeRefreshLayout.setRefreshing(false);
                         username.setText(data.getUsername());
-                        if (data.getAvatar() != null) {
-                            Picasso.with(getActivity()).load(data.getAvatar()).placeholder(R.drawable.ic_profile_none).into(avatar);
-                        } else {
-                            Picasso.with(getActivity()).load(data.getAvatar()).placeholder(R.drawable.ic_profile_none).into(avatar);
-                        }
+                        Picasso.with(getActivity()).load(data.getAvatar()).placeholder(R.drawable.ic_profile_none).into(avatar);
                         if (TextUtils.isEmpty(Cookie.user.getMobile())) {
                             phonenumber.setText("未绑定手机");
                         } else {

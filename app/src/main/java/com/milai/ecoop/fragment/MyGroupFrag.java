@@ -85,7 +85,14 @@ public class MyGroupFrag extends Fragment implements GroupAdapter.OnItemClickLis
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.bt_return_main:
-                        ((MainActivity) getActivity()).check(R.id.rb_home);
+                        // MainActivity ————false  MainIntoActivity——true
+                        final Boolean flag = getArguments().getBoolean("flag", false);
+                        Log.i("test", "flag:" + flag);
+                        if (!flag) {
+                            ((MainActivity) getActivity()).check(R.id.rb_home);
+                        } else {
+                            getActivity().finish();
+                        }
                         break;
                 }
             }

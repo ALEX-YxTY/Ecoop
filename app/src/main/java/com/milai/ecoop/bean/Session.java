@@ -8,7 +8,11 @@ public class Session {
 	}
 
 	public String getSid() {
-		return sid;
+		if (sid != null) {
+			return sid;
+		}else {
+			return "";
+		}
 	}
 
 	public void setSid(String sid) {
@@ -16,7 +20,11 @@ public class Session {
 	}
 
 	public String getUid() {
-		return uid;
+		if (uid != null) {
+			return uid;
+		}else {
+			return "";
+		}
 	}
 
 	public void setUid(String uid) {

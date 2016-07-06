@@ -100,11 +100,11 @@ public class TeamDetailActivity extends FragmentActivity implements View.OnClick
         for(int i=0;i<3;i++){
             if(teamUrls[i]!=null){
                 urls.add(NetDataHelper.imgdomain+teamUrls[i]);
-                Log.d("zcz",NetDataHelper.imgdomain+teamUrls[i]);
+                Log.i("zcz",NetDataHelper.imgdomain+teamUrls[i]);
             }
         }
         for(int i=0;i<urls.size();i++){
-            Log.d("zcz",urls.get(i));
+            Log.i("zcz",urls.get(i));
         }
         String[] imageUrls = {NetDataHelper.imgdomain + team.getImage(),
                 NetDataHelper.imgdomain + team.getImage1(),
@@ -354,7 +354,7 @@ public class TeamDetailActivity extends FragmentActivity implements View.OnClick
                                 @Override
                                 public void onSuccess(List<Ticket> data1, Order data2) {
                                     loadingDialog.dismiss();
-                                    Log.d("TeamDetail/ticket size", data1.size() + "");
+                                    Log.i("TeamDetail/ticket size", data1.size() + "");
                                     Intent i = new Intent(TeamDetailActivity.this, PayActivity.class);
                                     Bundle bundle = new Bundle();
                                     bundle.putSerializable("tickets", (Serializable) data1);

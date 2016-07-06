@@ -1,3 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\android\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\support-annotations-23.1.1_4bc177a50298b8d0d51d51dca0e7ccb2399512cf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.19\a8f23f65fc1e522ee4a1a697ee569901a46741fa\library-1.0.19.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\library-1.0.19_78f0bb23743784ba5177d1b9659f6fa6d6a7bd06.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\libs\gson-2.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="42a24d508f5e05bd22cc42bd2e2babd7b5466ec9">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\gson-2.2.1_bf0952426d25a619390f199f1810d975075defba.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-basement-8.1.0_05b8be4fa2dbdb66d3c0d5b48fd40bbe2afe7b63.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8465fad6dd05b954b82bd5ff22edd80992808561">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\com.android.support-gridlayout-v7-23.1.1_64b93e685adefa039f373224c35b03b2b06347bd.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\libs\umeng_social_sdk.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="02ad76d011fe5421fd5a82d7cbca60a435536750">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\umeng_social_sdk_dca2de7d4f33386483cd9e56417cb419c37b803b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\picasso-2.5.2_2428dbd5eabf65ae69bc01abd6e4b72d08e545aa.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.1.1_31b537c15ad6e27f09187265a2b8945037556ba8.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\build\intermediates\exploded-aar\com.bigkoo\convenientbanner\2.0.5\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b99798f653c15a17af6779bb9f01a66f2ee6e6ef">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\com.bigkoo-convenientbanner-2.0.5_fa82d4d6b60ca8ca275d5d79a2ede27a5af2ee61.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-appindexing-8.1.0_53b96dac6754bb5577cb08e4080c3ef7d846fecc.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\libs\httpmime-4.1.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e70d34d98f7f7f3b2b92105b9f2fe2a7a7184461">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\httpmime-4.1.3_7a14c7240101f37534fde2aef323eec22aa02dea.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\libs\alipaySdk-20151215.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a06f7968d9f7fcc8f23e1757d30ff5d98fa838e4">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\alipaySdk-20151215_7c5f6c185012ab574d8ee82831064c6d387ef285.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.umeng.analytics\analytics\6.0.1\aab9085bca0c26dcb9cb11837a5f5e22cc102a5e\analytics-6.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="aab9085bca0c26dcb9cb11837a5f5e22cc102a5e">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\analytics-6.0.1_1a9277752e05108a4538a9de7e86f64aaa45755a.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\libs\SocialSDK_WeiXin_2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="115a743cc0da01ca8dee6e2f2e5d901ea68200bd">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\SocialSDK_WeiXin_2_3b6e2ea3bd16e44cfb440e75594085ce2b20bcee.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\libs\libammsdk.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="47f4993168154fa73377d7470b9f6887d48a8023">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\libammsdk_1e1a0d8b90c76f07c6a616b28e906a7455e4596e.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\libs\locSDK_6.22.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1cecb2db953428800242a405be2f7f64f873fbdd">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\locSDK_6.22_e7811a9e9458246d4e558272d9506ee86109380a.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\libs\jpush-android-2.1.5.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0f26f97f6d6c7cb02247e1ec35034732f234badb">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\jpush-android-2.1.5_c156b73f52a10f79980d1fb771edc24a74d56128.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\libs\umeng-update-v2.6.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e76510af0986842b672c59d29502f3d29866320a">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\umeng-update-v2.6.0.1_29d71c3732f6a1a6e91963126c659cd47234aad1.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\internal_impl-23.1.1_bc7097b98c354c2480481aae373650c17342e03d.jar" />
+    </item>
+    <item
+        jar="D:\workshop-android\Ecoop\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\workshop-android\Ecoop\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-23.1.1_26f5f185f54b8f180e431a2bed8ceac085e5e898.jar" />
+    </item>
+
+</items>

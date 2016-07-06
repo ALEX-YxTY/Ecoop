@@ -123,15 +123,29 @@ public class MainIntoActivity extends FragmentActivity implements View.OnClickLi
                     showFrag("homeinto");
                 } else if (checkedId == R.id.rb_mine) {
 
+                    if (Cookie.session != null)
                         showFrag("mine");
+                    else {
+                        radioGroup.check(R.id.rb_home);
+                        showLoginDialog();
+                    }
 
                 } else if (checkedId == R.id.rb_group_purchase) {
 
+                    if (Cookie.session != null)
                         showFrag("grouppurchase");
-
+                    else {
+                        radioGroup.check(R.id.rb_home);
+                        showLoginDialog();
+                    }
                 } else if (checkedId == R.id.rb_order) {
 
+                    if (Cookie.session != null)
                         showFrag("order");
+                    else {
+                        radioGroup.check(R.id.rb_home);
+                        showLoginDialog();
+                    }
 
                 }
             }
@@ -259,9 +273,13 @@ public class MainIntoActivity extends FragmentActivity implements View.OnClickLi
         if (frag.equals("homeinto")) {
             if (currentPage != 1) {
                 currentPage = 1;
+
                 Bundle bundle=new Bundle();
                 bundle.putSerializable("category",category);
                 bundle.putString("city_id",city_id);
+                Boolean flag=true;
+                bundle.putBoolean("flag", flag);
+
                 homeintoFrag.setArguments(bundle);
                 //title_main.setText(R.string.app_name);
                 title_main.setText(category.getName());
@@ -274,10 +292,12 @@ public class MainIntoActivity extends FragmentActivity implements View.OnClickLi
         } else if (frag.equals("mine")) {
             if (currentPage != 2) {
                 currentPage = 2;
+
                 Bundle bundle=new Bundle();
                 Boolean flag=true;
                 bundle.putBoolean("flag", flag);
                 mineFrag.setArguments(bundle);
+
                 title_main.setText(R.string.mine_title);
                 bt_return.setVisibility(View.GONE);
                 share.setVisibility(View.GONE);
@@ -306,6 +326,12 @@ public class MainIntoActivity extends FragmentActivity implements View.OnClickLi
         } else if (frag.equals("grouppurchase")) {
             if (currentPage != 3) {
                 currentPage = 3;
+                //用来判断跳转页面是MainActivity或MainIntoActivity
+                Bundle bundle=new Bundle();
+                Boolean flag=true;
+                bundle.putBoolean("flag", flag);
+                myGroupFrag.setArguments(bundle);
+
                 title_main.setText(R.string.group_purchase);
                 bt_return.setVisibility(View.GONE);
                 share.setVisibility(View.VISIBLE);
@@ -316,6 +342,11 @@ public class MainIntoActivity extends FragmentActivity implements View.OnClickLi
         } else if (frag.equals("order")) {
             if (currentPage != 4) {
                 currentPage = 4;
+
+                Bundle bundle=new Bundle();
+                Boolean flag=true;
+                bundle.putBoolean("flag", flag);
+                orderFrag.setArguments(bundle);
 
                 title_main.setText(R.string.order);
                 bt_return.setVisibility(View.GONE);

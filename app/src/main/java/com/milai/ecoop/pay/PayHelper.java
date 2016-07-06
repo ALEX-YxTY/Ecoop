@@ -70,7 +70,7 @@ public class  PayHelper {
         System.out.println(obj.toString());
         Map<String, String> map = new HashMap<>();
         map.put("json", obj.toString());
-        Log.d("buy team request", obj.toString());
+        Log.i("buy team request", obj.toString());
         NormalPostRequest request = new NormalPostRequest(domain + "team/buy.php", new Listener<JSONObject>() {
 
             @Override
@@ -230,7 +230,8 @@ public class  PayHelper {
         }
 
         map.put("json", obj.toString());
-        Log.d("payrequest", obj.toString());
+
+        Log.i("payRequest", obj.toString());
         NormalPostRequest request = new NormalPostRequest(domain + "order/pay.php", new Listener<JSONObject>() {
 
             @Override
@@ -331,13 +332,13 @@ public class  PayHelper {
         }
 
         map.put("json", obj.toString());
-        Log.d("pay ali request", obj.toString());
+        Log.i("pay ali request", obj.toString());
         NormalPostRequest request = new NormalPostRequest(domain + "order/pay.php", new Listener<JSONObject>() {
 
             @Override
             public void onResponse(JSONObject arg0) {
                 int succeed;
-                Log.d("payaliresponse", arg0.toString());
+                Log.i("payaliresponse", arg0.toString());
                 try {
                     succeed = arg0.getJSONObject("status").getInt("succeed");
                     if (succeed == 0) {

@@ -960,13 +960,13 @@ public class NetDataHelper {
         }
         Map<String, String> map = new HashMap<>();
         map.put("json", obj.toString());
-        Log.d("check order request", obj.toString());
+        Log.i("check order request", obj.toString());
         NormalPostRequest request = new NormalPostRequest(domain + "order/check.php",
                 new Listener<JSONObject>() {
 
                     @Override
                     public void onResponse(JSONObject arg0) {
-                        Log.d("check order response", arg0.toString());
+                        Log.i("check order response", arg0.toString());
                         int succeed;
                         try {
                             succeed = arg0.getJSONObject("status").getInt("succeed");
@@ -988,6 +988,7 @@ public class NetDataHelper {
 
             @Override
             public void onErrorResponse(VolleyError arg0) {
+                Log.i("check order response", arg0.toString());
                 callback.onError(arg0.toString());
             }
 

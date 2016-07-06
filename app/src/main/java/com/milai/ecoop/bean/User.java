@@ -61,7 +61,11 @@ public class User implements Serializable {
     }
 
     public String getUsername() {
-        return username;
+        if (username != null) {
+            return username;
+        }else {
+            return "";
+        }
     }
 
     public void setUsername(String username) {
